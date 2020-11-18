@@ -1,4 +1,4 @@
-package p4_group_8_repo;
+package frogActor;
 
 import javafx.scene.image.Image;
 
