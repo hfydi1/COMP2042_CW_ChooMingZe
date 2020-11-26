@@ -34,7 +34,7 @@ public class frogGame {
 		//Obstacle obstacle1 = new Obstacle("file:src/p4_group_8_repo/truck2Right.png", 100, 100,2 );
 		//Obstacle obstacle2 = new Obstacle("file:src/p4_group_8_repo/truck1Right.png",0,  150, 1);
 
-		BackgroundImage froggerback = new BackgroundImage("file:src/image/iKogsKW.png");
+		BackgroundImage froggerback = new BackgroundImage("file:src/image/backImageEdit.jpg");
 	    
 		background.add(froggerback);
 		
@@ -117,6 +117,7 @@ public class frogGame {
 	        		Alert alert = new Alert(AlertType.INFORMATION);
 	        		alert.setTitle("You Have Won The Game!");
 	        		alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
+	        		
 	        		alert.setContentText("Highest Possible Score: 800");
 	        		alert.show();
 	        	}

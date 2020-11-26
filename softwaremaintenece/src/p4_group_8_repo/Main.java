@@ -3,6 +3,7 @@ package p4_group_8_repo;
 import java.io.File;
 
 
+
 import java.util.List;
 
 import frogActor.Animal;
@@ -14,6 +15,7 @@ import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
 import frogMainmenu.Mainmenu;
+import frogInfo.Info;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -33,8 +35,9 @@ public class Main extends Application {
 	
 	public void start (Stage primaryStage) throws Exception{
 		
-		frogGame froggame = new frogGame();
+	//	frogGame froggame = new frogGame();
 		Mainmenu mainmenu = new Mainmenu();
+		//Info info = new Info();
 		//froggame.start(primaryStage);
 		
 		mainmenu.menuStart(primaryStage);

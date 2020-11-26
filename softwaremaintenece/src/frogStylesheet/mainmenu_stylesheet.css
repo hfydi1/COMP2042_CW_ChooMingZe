@@ -1,0 +1,15 @@
+.group{
+	-fx-font-size:50px;
+}
+
+#menutext{
+	-fx-font-size:25px;
+	-fx-align: center;
+	-fx-fill: white;
+	
+}
+
+.button{
+	-fx-background-color: darkslateblue;
+	-fx-text-fill: white;
+}
