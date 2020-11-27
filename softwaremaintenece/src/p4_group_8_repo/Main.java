@@ -4,8 +4,11 @@ import java.io.File;
 
 
 
-import java.util.List;
 
+import java.util.List;
+import frogMainmenu.Mainmenu_controller;
+import frogMainmenu.Mainmenu_model;
+import frogMainmenu.Mainmenu_view;
 import frogActor.Animal;
 import frogActor.BackgroundImage;
 import frogActor.Digit;
@@ -14,7 +17,7 @@ import frogActor.Log;
 import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
-import frogMainmenu.Mainmenu;
+import frogGame.frogGame;
 import frogInfo.Info;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
@@ -35,12 +38,14 @@ public class Main extends Application {
 	
 	public void start (Stage primaryStage) throws Exception{
 		
-	//	frogGame froggame = new frogGame();
-		Mainmenu mainmenu = new Mainmenu();
-		//Info info = new Info();
-		//froggame.start(primaryStage);
+		Mainmenu_model model = new Mainmenu_model(primaryStage);
+		Mainmenu_view view = new Mainmenu_view();
+		Mainmenu_controller controller = new Mainmenu_controller(model,view);
+		//Mainmenu mainmenu = new Mainmenu();
 		
-		mainmenu.menuStart(primaryStage);
+		
+		
+		controller.runMainmenu();
 	}
 	
 	
