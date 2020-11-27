@@ -1,0 +1,17 @@
+.button{
+	-fx-background-color: darkslateblue;
+	-fx-text-fill: white;
+}
+
+#rulestext{
+	-fx-font-size :40px;
+	-fx-fill: green;
+	-fx-font-family: "Times New Roman";
+	
+
+}
+
+#infotext{
+	-fx-font-size :22px;
+	-fx-fill: white;
+}
