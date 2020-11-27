@@ -1,6 +1,8 @@
-package p4_group_8_repo;
+package frogGame;
 
 import frogActor.Animal;
+
+
 import frogActor.BackgroundImage;
 import frogActor.Digit;
 import frogActor.End;
@@ -8,6 +10,9 @@ import frogActor.Log;
 import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
+import frogMainmenu.Mainmenu_controller;
+import frogMainmenu.Mainmenu_model;
+import frogMainmenu.Mainmenu_view;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
