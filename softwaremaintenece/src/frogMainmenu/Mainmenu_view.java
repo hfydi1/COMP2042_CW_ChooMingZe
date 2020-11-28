@@ -6,6 +6,7 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
+import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 public class Mainmenu_view {
@@ -19,10 +20,10 @@ public class Mainmenu_view {
 		group.getChildren().add(new BackgroundImage("file:src/image/iKogsKW.png"));
 		
 		Text text = new Text("Welcome to Frogger");
-		text.setLayoutX(200);
+		text.setLayoutX(170);
 		text.setLayoutY(300);
 		text.setId("menutext");
-		
+				
 		
 		//Button start = new Button("Start Game");
 		start.setLayoutX(230);
@@ -40,5 +41,6 @@ public class Mainmenu_view {
 		stage.setTitle("Frogger");
 		stage.show();
 	}
+	
 	
 }
