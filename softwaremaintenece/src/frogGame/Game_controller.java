@@ -17,6 +17,10 @@ public class Game_controller {
 public void runGame()throws Exception{
 		
 		view.start(model.getStage(), model.getMyStage(), model.getScene(), model.getAnimal());
+		//model.getMyStage().start();
+		//model.getMyStage().start();
+		model.start();
+		
 	}
 	
 	
