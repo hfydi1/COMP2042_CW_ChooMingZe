@@ -4,7 +4,7 @@
 
 #menutext{
 	-fx-font-size:25px;
-	-fx-align: center;
+	-fx-text-alignment: center;
 	-fx-fill: white;
 	
 }
