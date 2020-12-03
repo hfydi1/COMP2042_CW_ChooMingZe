@@ -109,9 +109,7 @@ public class Info {
 		
 		
 		
-		group.getChildren().addAll(background,car,truck,turtle,log,frogEnd,wasd);
-		
-		group.getChildren().addAll(text,back,wasdtext,vehicletext,rivertext,endtext);
+		group.getChildren().addAll(background,car,truck,turtle,log,frogEnd,wasd,text,back,wasdtext,vehicletext,rivertext,endtext);
 		Scene sceneinfo = new Scene(group,550,800);
 		sceneinfo.getStylesheets().add("frogStylesheet/info_stylesheet.css");
 		

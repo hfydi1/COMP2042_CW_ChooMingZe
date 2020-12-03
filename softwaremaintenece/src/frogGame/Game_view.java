@@ -73,6 +73,7 @@ public class Game_view {
 		background.add(new End(141 + 141-13+141-13+141-13+3,96));
 		
 		background.add(animal);
+		
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 0, 649, 1, 120, 120));
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 300, 649, 1, 120, 120));
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 600, 649, 1, 120, 120));

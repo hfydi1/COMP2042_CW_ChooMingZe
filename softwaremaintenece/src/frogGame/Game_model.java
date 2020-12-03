@@ -1,7 +1,13 @@
 package frogGame;
 
+
+
+import java.io.IOException;
+
 import frogActor.Animal;
+
 import frogActor.Digit;
+import frogHighscore.Highscore;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -15,12 +21,14 @@ public class Game_model {
 	private Scene sceneGame;
 	private AnimationTimer timer;
 	private Animal animal;
+	private Highscore highscore;
 	
 	public Game_model(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 		background = new MyStage();
 		this.sceneGame = new Scene(background,600,800);
 		animal = new Animal("file:src/image/froggerUp.png");
+		this.highscore=new Highscore();
 	}
 	
 	public void setScene(Scene scene){
@@ -80,14 +88,25 @@ public class Game_model {
 	        	if (animal.getStop()) {
 	        		System.out.print("STOPP:");
 	        		background.stopMusic();
+	        		
 	        		stop();
 	        		background.stop();
+	        		/*
 	        		Alert alert = new Alert(AlertType.INFORMATION);
 	        		alert.setTitle("You Have Won The Game!");
 	        		alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
 	        		
 	        		alert.setContentText("Highest Possible Score: 800");
 	        		alert.show();
+	        		*/
+	        		try {
+						highscore.setScore(animal.getPoints());
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+	        		
+	        		highscore.getScore();
 	        	}
 	        }
 	    };

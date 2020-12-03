@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
@@ -21,14 +22,20 @@ public class Highscore{
 	public void highcore(){
 	}
 	private ArrayList<Integer> scorearr = new ArrayList<Integer>();
-	
+	File scorefile = new File ("src/frogHighscore/hscore.txt");	
 	public void setScore(int point) throws IOException{		
-				
+		
+		if (scorefile.exists()==false) {
+			scorefile.createNewFile();
+			
+		}
+			
 		for(int i=0;i<10;i++) {
 			
 			scorearr.add(0);
 		}
-	File scorefile = new File ("src/frogHighscore/hscore.txt");	
+		
+	
 	Scanner scanner = new Scanner(scorefile);
 		
 		try {
@@ -42,22 +49,23 @@ public class Highscore{
 				e.printStackTrace();
 			}
 			scanner.close();			
-			if (scorearr.size()>=10) {
+			if (scorearr.size()>10) {
 				if(point>=scorearr.get(9)) { 
 						scorearr.add(point);
-						scorearr.remove(9);
+						
 				}			
+				
 			}else {				
 				scorearr.add(point);			
 			}
-			Collections.sort(scorearr,Collections.reverseOrder());	
 			
+			Collections.sort(scorearr,Collections.reverseOrder());	
 			FileWriter file = new FileWriter(scorefile);
 			BufferedWriter buffer = new BufferedWriter(file);
 			PrintWriter writer = new PrintWriter(buffer);{
 		
 			
-			for(int i=0;i<scorearr.size();i++) {
+			for(int i=0;i<10;i++) {
 				writer.println(scorearr.get(i));
 				
 			}
@@ -79,13 +87,8 @@ public class Highscore{
 	public void getScore() {
 		
 		try {
-			BufferedReader br = null;
-			FileReader fr = null;
-			fr = new FileReader("highscore.txt");
-			br = new BufferedReader(fr);
-			String curline="";
-			Alert alert = new Alert(AlertType.INFORMATION);
-    		alert.setTitle("You Have Won The Game!");
+				Alert alert = new Alert(AlertType.INFORMATION);
+    			alert.setTitle("You Have Won The Game!");
 			
         		alert.setHeaderText(display(scorearr));
 			

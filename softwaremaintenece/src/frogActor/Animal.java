@@ -11,7 +11,7 @@ import javafx.scene.input.KeyEvent;
 
 
 public class Animal extends Actor {
-	Image imgW1;
+	private Image imgW1;
 	Image imgA1;
 	Image imgS1;
 	Image imgD1;
@@ -20,7 +20,7 @@ public class Animal extends Actor {
 	Image imgS2;
 	Image imgD2;
 	int points = 0;
-	int end = 0;
+	int end = 4;
 	private boolean second = false;
 	boolean noMove = false;
 	double movement = 13.3333333*2;
