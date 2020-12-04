@@ -1,4 +1,4 @@
-package p4_group_8_repo;
+package frogMain;
 
 import java.io.File;
 
@@ -38,14 +38,9 @@ public class Main extends Application {
 	
 	public void start (Stage primaryStage) throws Exception{
 		
-		Mainmenu_model model = new Mainmenu_model(primaryStage);
-		Mainmenu_view view = new Mainmenu_view();
-		Mainmenu_controller controller = new Mainmenu_controller(model,view);
-		//Mainmenu mainmenu = new Mainmenu();
+		frogScenemanager scenemanager = new frogScenemanager(primaryStage);
+		scenemanager.startMainMenu();
 		
-		
-		
-		controller.runMainmenu();
 	}
 	
 	
