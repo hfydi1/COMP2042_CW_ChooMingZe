@@ -21,7 +21,7 @@ public class Highscore{
 
 	public void highcore(){
 	}
-	private ArrayList<Integer> scorearr = new ArrayList<Integer>();
+	public ArrayList<Integer> scorearr = new ArrayList<Integer>();
 	File scorefile = new File ("src/frogHighscore/hscore.txt");	
 	public void setScore(int point) throws IOException{		
 		
@@ -34,8 +34,12 @@ public class Highscore{
 			
 			scorearr.add(0);
 		}
-		
-	
+		if(point>800) {
+			point=800;
+		}
+		if(point<0) {
+			point=0;
+		}
 	Scanner scanner = new Scanner(scorefile);
 		
 		try {
@@ -70,6 +74,7 @@ public class Highscore{
 				
 			}
 			writer.close();
+			
 			
 	}
 }
