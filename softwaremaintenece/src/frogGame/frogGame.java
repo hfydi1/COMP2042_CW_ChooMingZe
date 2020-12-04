@@ -13,12 +13,12 @@ import frogActor.WetTurtle;
 import frogMainmenu.Mainmenu_controller;
 import frogMainmenu.Mainmenu_model;
 import frogMainmenu.Mainmenu_view;
+import frogWorld.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
-import p4_group_8_repo.MyStage;
 
 public class frogGame {		
 

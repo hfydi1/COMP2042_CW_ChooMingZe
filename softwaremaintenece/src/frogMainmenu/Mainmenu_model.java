@@ -2,7 +2,9 @@ package frogMainmenu;
 
 import javafx.scene.Scene;
 
+
 import frogInfo.Info_view;
+import frogMain.frogScenemanager;
 import frogInfo.Info_controller;
 import frogInfo.Info_model;
 import javafx.scene.control.Button;
@@ -21,6 +23,7 @@ public class Mainmenu_model {
 	private Group group;
 	private Button start;
 	private Button info;
+	private frogScenemanager scenemanager;
 	
 	public Mainmenu_model(Stage stage) {		
 		this.stage=stage;
@@ -28,7 +31,7 @@ public class Mainmenu_model {
 		sceneMenu= new Scene(group,550,800);
 		start = new Button("Start Game");
 		info = new Button("Info");
-		
+		scenemanager = new frogScenemanager(stage);
 	}
 	public void setScene(Scene scene){
         sceneMenu= scene;      
@@ -60,34 +63,24 @@ public class Mainmenu_model {
      }
 	
 	public void setStart(Button start){
-		start.setOnAction(e-> {
-			
-			Game_view view = new Game_view();
-			Game_model model = new Game_model(stage);
-			Game_controller controller = new Game_controller(model,view);		
-		try {
-			controller.runGame();
+		start.setOnAction(e-> {	try {
+			scenemanager.startGame();
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
-		} });     
-     }
-	
-	
+		}			
+     });
+	}	
 	
 	public void setInfo(Button info){
-		info.setOnAction(e->{
-			Info_view view = new Info_view();
-			Info_model model = new Info_model(stage);
-			Info_controller controller = new Info_controller(model,view);
-			try {
-			controller.runInfo();
-		} catch (Exception e2) {
+		info.setOnAction(e->{try {
+			scenemanager.startInfo();
+		} catch (Exception e1) {
 			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		} });   
-     }
-	
+			e1.printStackTrace();
+		}
+     });
+	}
 	public Button getInfo(){
         return info;      
      

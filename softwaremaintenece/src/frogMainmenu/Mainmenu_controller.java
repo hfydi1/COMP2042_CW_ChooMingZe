@@ -16,19 +16,6 @@ public class Mainmenu_controller {
         
      }
 	
-	/*
-	public void setScene(Scene scene){
-        model.setScene(scene);      
-     }
-	
-	public Scene getScene(){
-        return model.getScene();      
-     }
-	*/
-	public void setButton(Button start) {
-		model.setStart(model.getStart());
-		
-	}
 	
 	public void runMainmenu()throws Exception{
 		

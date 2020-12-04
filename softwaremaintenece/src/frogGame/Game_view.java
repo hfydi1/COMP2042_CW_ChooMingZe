@@ -8,10 +8,10 @@ import frogActor.Log;
 import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
+import frogWorld.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import p4_group_8_repo.MyStage;
 
 public class Game_view {
 	
@@ -27,7 +27,7 @@ public class Game_view {
 		//Obstacle obstacle2 = new Obstacle("file:src/p4_group_8_repo/truck1Right.png",0,  150, 1);
 		
 		background.add(new BackgroundImage("file:src/image/backImageEdit.jpg"));
-		
+		/*
 		background.add(new Log("file:src/image/log3.png", 150, 0, 166, 0.75));
 		background.add(new Log("file:src/image/log3.png", 150, 220, 166, 0.75));
 		background.add(new Log("file:src/image/log3.png", 150, 440, 166, 0.75));
@@ -65,7 +65,7 @@ public class Game_view {
 		//End end3 = new End();
 		//End end4 = new End();
 		//End end5 = new End();
-		
+		*/
 		background.add(new End(13,96));
 		background.add(new End(141,96));
 		background.add(new End(141 + 141-13,96));
@@ -73,7 +73,7 @@ public class Game_view {
 		background.add(new End(141 + 141-13+141-13+141-13+3,96));
 		
 		background.add(animal);
-		
+		/*
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 0, 649, 1, 120, 120));
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 300, 649, 1, 120, 120));
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 600, 649, 1, 120, 120));
@@ -90,7 +90,7 @@ public class Game_view {
 		//background.add(obstacle);
 		//background.add(obstacle1);
 		//background.add(obstacle2);
-		
+		*/
 		background.start();
 		primaryStage.setScene(scene);
 		primaryStage.show();
