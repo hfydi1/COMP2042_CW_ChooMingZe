@@ -12,27 +12,32 @@ import javafx.scene.input.KeyEvent;
 
 public class Animal extends Actor {
 	private Image imgW1;
-	Image imgA1;
-	Image imgS1;
-	Image imgD1;
-	Image imgW2;
-	Image imgA2;
-	Image imgS2;
-	Image imgD2;
-	int points = 0;
-	int end = 4;
+	private Image imgA1;
+	private Image imgS1;
+	private Image imgD1;
+	private Image imgW2;
+	private Image imgA2;
+	private Image imgS2;
+	private Image imgD2;
+	private int points = 0;
+	private int end = 4;
 	private boolean second = false;
-	boolean noMove = false;
-	double movement = 13.3333333*2;
-	double movementX = 10.666666*2;
-	int imgSize = 40;
-	boolean carDeath = false;
-	boolean waterDeath = false;
-	boolean stop = false;
-	boolean changeScore = false;
-	int carD = 0;
-	double w = 800;
-	ArrayList<End> inter = new ArrayList<End>();
+	private boolean noMove = false;
+	private double movement = 13.3333333*2;
+	private double movementX = 10.666666*2;
+	private int imgSize = 40;
+	private boolean carDeath = false;
+	private boolean waterDeath = false;
+	private boolean stop = false;
+	private boolean changeScore = false;
+	private int carD = 0;
+	private double w = 800;
+	private ArrayList<End> inter = new ArrayList<End>();
+	
+	/**
+	 * Create animal by getting parameter imagelink
+	 * @param imageLink
+	 */
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
@@ -131,7 +136,11 @@ public class Animal extends Actor {
 			
 		});
 	}
-	
+	/**
+	 * override act method and get now as parameter 
+	 * get the postion of frog when action is performed
+	 * get the death of frog in different ways
+	 */
 	@Override
 	public void act(long now) {
 		int bounds = 0;
@@ -241,20 +250,31 @@ public class Animal extends Actor {
 			setX(300);
 			setY(679.8+movement);
 		}
-		else if (getY()<413){
+		else if (getY()<0){
 			waterDeath = true;
 			//setX(300);
 			//setY(679.8+movement);
 		}
 	}
+	
+	/**
+	 * access stop game
+	 * @return end equal to 5
+	 */
 	public boolean getStop() {
 		return end==5;
 	}
-	
+	/**
+	 * access points
+	 * @return
+	 */
 	public int getPoints() {
 		return points;
 	}
-	
+	/**
+	 * access to score changes
+	 * @return score changes in boolean
+	 */
 	public boolean changeScore() {
 		if (changeScore) {
 			changeScore = false;

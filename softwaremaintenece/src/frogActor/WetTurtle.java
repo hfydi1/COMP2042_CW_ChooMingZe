@@ -3,14 +3,18 @@ package frogActor;
 import javafx.scene.image.Image;
 
 public class WetTurtle extends Actor{
-	Image turtle1;
-	Image turtle2;
-	Image turtle3;
-	Image turtle4;
+	private Image turtle1;
+	private Image turtle2;
+	private Image turtle3;
+	private Image turtle4;
 	private int speed;
 	int i = 1;
-	boolean bool = true;
-	boolean sunk = false;
+	private boolean bool = true;
+	private boolean sunk = false;
+	/**
+	 * 
+	 * override act method and get now as parameter to set current wetturtle's position/state
+	 */
 	@Override
 	public void act(long now) {
 
@@ -37,6 +41,16 @@ public class WetTurtle extends Actor{
 		if (getX() < -75 && speed<0)
 			setX(600);
 	}
+	
+	/**
+	 * Create turtle by getting parameters x position ,y position ,speed , width and height
+	 * 
+	 * @param xpos x-position
+	 * @param ypos y-position
+	 * @param s speed
+	 * @param w width
+	 * @param h height
+	 */
 	public WetTurtle(int xpos, int ypos, int s, int w, int h) {
 		turtle1 = new Image("file:src/image/TurtleAnimation1.png", w, h, true, true);
 		turtle2 = new Image("file:src/image/TurtleAnimation2Wet.png", w, h, true, true);
@@ -47,6 +61,12 @@ public class WetTurtle extends Actor{
 		speed = s;
 		setImage(turtle2);
 	}
+	
+	/**
+	 * 
+	 * access the state of turtle
+	 * @return the state or turtle is sunk or not in boolean
+	 */
 	public boolean isSunk() {
 		return sunk;
 	}

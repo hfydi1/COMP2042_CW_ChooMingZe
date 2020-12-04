@@ -1,19 +1,14 @@
 package frogHighscore;
 
-import java.io.BufferedReader;
+
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Scanner;
-
-import frogActor.Animal;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
@@ -21,8 +16,14 @@ public class Highscore{
 
 	public void highcore(){
 	}
+	
 	public ArrayList<Integer> scorearr = new ArrayList<Integer>();
 	File scorefile = new File ("src/frogHighscore/hscore.txt");	
+	/**
+	 * create a set score to get the score from the game and set in a txt file
+	 * @param point
+	 * @throws IOException
+	 */
 	public void setScore(int point) throws IOException{		
 		
 		if (scorefile.exists()==false) {
@@ -78,7 +79,11 @@ public class Highscore{
 			
 	}
 }
-	
+	/**
+	 * create a display to show the highscore
+	 * @param array
+	 * @return
+	 */
 	public String display(ArrayList<Integer> array) {
 		
 			String sortedscore = new String("Highscore\n1." + array.get(0)+ "\n2." +array.get(1)+ "\n3." +array.get(2)+ "\n4." +array.get(3) +"\n5." +array.get(4)+ "\n6." +array.get(5) +"\n7." +array.get(6)+ "\n8." +array.get(7) +"\n9." +array.get(8)+ "\n10." +array.get(9));
@@ -88,7 +93,9 @@ public class Highscore{
 	
 }
 
-	
+	/**
+	 * get previous high score to be displayed
+	 */
 	public void getScore() {
 		
 		try {

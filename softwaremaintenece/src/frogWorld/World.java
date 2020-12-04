@@ -19,7 +19,9 @@ import javafx.scene.layout.StackPane;
 
 public abstract class World extends Pane {
     private AnimationTimer timer;
-    
+    /**
+     * handle the game when it is running
+     */
     public World() {
     	
     	sceneProperty().addListener(new ChangeListener<Scene>() {
@@ -64,7 +66,9 @@ public abstract class World extends Pane {
     		
 		});
     }
-
+    /**
+     * create a timer whe ngame starts
+     */
     public void createTimer() {
         timer = new AnimationTimer() {
             @Override
@@ -79,24 +83,39 @@ public abstract class World extends Pane {
             }
         };
     }
-
+    /**
+     * start the game
+     */
     public void start() {
     	createTimer();
         timer.start();
     }
-
+    /**
+     * stop the game
+     */
     public void stop() {
         timer.stop();
     }
-    
+    /**
+     * add an actor
+     * @param actor
+     */
     public void add(Actor actor) {
         getChildren().add(actor);
     }
-
+    /**
+     * remove an actor
+     * @param actor
+     */
     public void remove(Actor actor) {
         getChildren().remove(actor);
     }
-
+    /**
+     * 
+     * @param <A>
+     * @param cls
+     * @return
+     */
     public <A extends Actor> List<A> getObjects(Class<A> cls) {
         ArrayList<A> someArray = new ArrayList<A>();
         for (Node n: getChildren()) {
@@ -106,6 +125,9 @@ public abstract class World extends Pane {
         }
         return someArray;
     }
-
+    /**
+     * abstract act method getting parameter now
+     * @param now
+     */
     public abstract void act(long now);
 }

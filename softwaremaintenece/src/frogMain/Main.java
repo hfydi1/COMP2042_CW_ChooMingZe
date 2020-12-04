@@ -5,6 +5,8 @@ import java.io.File;
 
 
 
+
+
 import java.util.List;
 import frogMainmenu.Mainmenu_controller;
 import frogMainmenu.Mainmenu_model;
@@ -17,8 +19,6 @@ import frogActor.Log;
 import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
-import frogGame.frogGame;
-import frogInfo.Info;
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -31,11 +31,17 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Main extends Application {
-
+	/**
+	 * main function that takes args as parameter
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		launch(args);
 	}
-	
+	/**
+	 * create start and take primaryStage as parameter
+	 * the program start with mainmenu
+	 */
 	public void start (Stage primaryStage) throws Exception{
 		
 		frogScenemanager scenemanager = new frogScenemanager(primaryStage);

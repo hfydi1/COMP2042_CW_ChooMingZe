@@ -19,7 +19,14 @@ public class Game_view {
 		
 		
 	}
-	
+	/**
+	 * create start by getting parameters primarystage,background,scene and animal
+	 * @param primaryStage 
+	 * @param background
+	 * @param scene
+	 * @param animal
+	 * @throws Exception
+	 */
 	public void start(Stage primaryStage, MyStage background, Scene scene,Animal animal) throws Exception {
 		
 		//Obstacle obstacle = new Obstacle("file:src/p4_group_8_repo/truck1Right.png", 25, 25, 3);

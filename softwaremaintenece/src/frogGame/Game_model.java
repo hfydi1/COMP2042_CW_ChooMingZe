@@ -22,7 +22,10 @@ public class Game_model {
 	private AnimationTimer timer;
 	private Animal animal;
 	private Highscore highscore;
-	
+	/**
+	 * construct a Game_model constructor that takes in primaryStage as param
+	 * @param primaryStage
+	 */
 	public Game_model(Stage primaryStage) {
 		this.primaryStage = primaryStage;
 		background = new MyStage();
@@ -30,54 +33,84 @@ public class Game_model {
 		animal = new Animal("file:src/image/froggerUp.png");
 		this.highscore=new Highscore();
 	}
-	
+	/**
+	 * set a scene
+	 * @param scene
+	 */
 	public void setScene(Scene scene){
         sceneGame= scene;      
      }
-	
+	/**
+	 * return a scene
+	 * @return
+	 */
 	public Scene getScene(){
         return sceneGame;      
      }
-	
+	/**
+	 * set a stage
+	 * @param primaryStage
+	 */
 	public void setStage(Stage primaryStage){
         this.primaryStage=primaryStage;      
      }
-	
+	/**
+	 * return a stage
+	 * @return
+	 */
 	public Stage getStage(){
         return primaryStage;      
      }
-	
+	/**
+	 * set a Mystage
+	 * @param background
+	 */
 	public void setMyStage(MyStage background) {
 		this.background=background;
 		
 	}
-	
+	/**
+	 * return Mystage
+	 * @return
+	 */
 	public MyStage getMyStage() {
 		
 		return background;
 	}
-	
+	/**
+	 * set a animal
+	 * @param animal
+	 */
 	public void setAnimal(Animal animal) {
 		this.animal=animal;
 		
 	}
-	
+	/**
+	 * return a animal
+	 * @return
+	 */
 	public Animal getAnimal() {
 		
 		return animal;
 	} 	
 	
-	
+	/**
+	 * start the game
+	 */
 	public void start() {
 		background.playMusic();
 		createTimer();
 	    timer.start();
 	}
-	
+	/**
+	 * stop the game
+	 */
 	public void stop() {
 	    timer.stop();
 	}
-	
+	/**
+	 * monitor the game
+	 */
 	public void createTimer() {
 	    timer = new AnimationTimer() {
 	        @Override
@@ -111,7 +144,10 @@ public class Game_model {
 	        }
 	    };
 	}
-	
+	/**
+	 * setnumber
+	 * @param n
+	 */
 	public void setNumber(int n) {
 		int shift = 0;
 		while (n > 0) {

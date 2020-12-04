@@ -6,13 +6,20 @@ public class Info_controller {
 	
 	private Info_model model;
 	private Info_view view;
-	
+	/**
+	 * construct a Info_controller that takes in model and view as parameters
+	 * @param model
+	 * @param view
+	 */
 	public Info_controller(Info_model model, Info_view view){
         this.model = model;
         this.view = view;      
         
      }
-	
+	/**
+	 * run info scene
+	 * @throws Exception
+	 */
 	public void runInfo() throws Exception{
 		
 		view.infoStart(model.getStage(), model.getGroup(), model.getScene(), model.getBack());

@@ -3,12 +3,16 @@ package frogActor;
 import javafx.scene.image.Image;
 
 public class Turtle extends Actor{
-	Image turtle1;
-	Image turtle2;
-	Image turtle3;
+	private Image turtle1;
+	private Image turtle2;
+	private Image turtle3;
 	private int speed;
-	int i = 1;
-	boolean bool = true;
+	private int i = 1;
+	private boolean bool = true;
+	/**
+	 * 
+	 *  override act method and get now as parameter to set current turtle's position/state
+	 */
 	@Override
 	public void act(long now) {
 
@@ -31,6 +35,15 @@ public class Turtle extends Actor{
 		if (getX() < -75 && speed<0)
 			setX(600);
 	}
+	/**
+	 * 
+	 * Create turtle by getting parameters x position ,y position ,speed , width and height
+	 * @param xpos x position
+	 * @param ypos y position
+	 * @param s  speed
+	 * @param w width
+	 * @param h height
+	 */
 	public Turtle(int xpos, int ypos, int s, int w, int h) {
 		turtle1 = new Image("file:src/image/TurtleAnimation1.png", w, h, true, true);
 		turtle2 = new Image("file:src/image/TurtleAnimation2.png", w, h, true, true);

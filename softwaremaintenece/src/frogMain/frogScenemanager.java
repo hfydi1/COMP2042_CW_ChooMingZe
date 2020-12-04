@@ -14,12 +14,18 @@ import javafx.stage.Stage;
 public class frogScenemanager {
 	private Stage primaryStage;
 	
-	
+	/**
+	 * construct a frogScenemanager that takes in primarystage as param
+	 * @param primaryStage
+	 */
 	public frogScenemanager(Stage primaryStage) {
 		
 		this.primaryStage=primaryStage;
 	}
-	
+	/**
+	 * create startMainmenu to run mainmenu scene
+	 * @throws Exception
+	 */
 	public void startMainMenu() throws Exception {
 		
 		Mainmenu_view view = new Mainmenu_view();
@@ -27,7 +33,10 @@ public class frogScenemanager {
 		Mainmenu_controller controller = new Mainmenu_controller(model,view);
 		controller.runMainmenu();
 	}
-	
+	/**
+	 * create startInfo to run info scene
+	 * @throws Exception
+	 */
 	public void startInfo() throws Exception {
 		
 		Info_view view = new Info_view();
@@ -35,7 +44,10 @@ public class frogScenemanager {
 		Info_controller controller = new Info_controller(model,view);
 		controller.runInfo();
 	}
-
+	/**
+	 * create startGame to run game scene
+	 * @throws Exception
+	 */
 	public void startGame() throws Exception {
 		
 		Game_view view = new Game_view();

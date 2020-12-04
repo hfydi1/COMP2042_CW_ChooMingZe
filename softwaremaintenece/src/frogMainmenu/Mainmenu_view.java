@@ -1,19 +1,25 @@
 package frogMainmenu;
 
 import frogActor.BackgroundImage;
-import frogGame.frogGame;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
-import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 public class Mainmenu_view {
 	public Mainmenu_view() {
 		
 	};
-	
+	/**
+	 * create menuStart by getting stage, group, sceneMenu,start and info as params
+	 * @param stage
+	 * @param group
+	 * @param sceneMenu
+	 * @param start
+	 * @param info
+	 * @throws Exception
+	 */
 	public void menuStart(Stage stage, Group group,Scene sceneMenu, Button start,Button info) throws Exception {
 		
 		//Group group = new Group();
