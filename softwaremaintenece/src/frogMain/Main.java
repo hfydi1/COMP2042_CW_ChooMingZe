@@ -46,7 +46,6 @@ public class Main extends Application {
 		
 		frogScenemanager scenemanager = new frogScenemanager(primaryStage);
 		scenemanager.startMainMenu();
-		
 	}
 	
 	

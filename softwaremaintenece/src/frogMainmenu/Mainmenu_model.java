@@ -16,7 +16,7 @@ public class Mainmenu_model {
 	private frogScenemanager scenemanager;
 	/**
 	 * construct a Mainmenu_model constructor that takes in stage as param
-	 * @param primaryStage
+	 * @param stage
 	 */
 	public Mainmenu_model(Stage stage) {		
 		this.stage=stage;

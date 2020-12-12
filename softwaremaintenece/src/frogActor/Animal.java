@@ -250,7 +250,7 @@ public class Animal extends Actor {
 			setX(300);
 			setY(679.8+movement);
 		}
-		else if (getY()<0){
+		else if (getY()<413){
 			waterDeath = true;
 			//setX(300);
 			//setY(679.8+movement);

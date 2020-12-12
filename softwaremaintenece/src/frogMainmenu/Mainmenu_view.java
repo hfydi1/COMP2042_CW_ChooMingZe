@@ -22,9 +22,8 @@ public class Mainmenu_view {
 	 */
 	public void menuStart(Stage stage, Group group,Scene sceneMenu, Button start,Button info) throws Exception {
 		
-		//Group group = new Group();
+		//Group group = new Group();roup.getChildren().add(new BackgroundImage("file:src/image/iKogsKW.png"));
 		group.getChildren().add(new BackgroundImage("file:src/image/iKogsKW.png"));
-		
 		Text text = new Text("Welcome to Frogger");
 		text.setLayoutX(170);
 		text.setLayoutY(300);
@@ -45,6 +44,7 @@ public class Mainmenu_view {
 		sceneMenu.getStylesheets().add("frogStylesheet/mainmenu_stylesheet.css");
 		stage.setScene(sceneMenu);
 		stage.setTitle("Frogger");
+		
 		stage.show();
 	}
 	

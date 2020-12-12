@@ -41,7 +41,7 @@ public abstract class Actor extends ImageView{
         return this.getBoundsInLocal().getHeight();
     }
     /**
-     * 
+     * check intersect
      * @param <A>
      * @param cls
      * @return

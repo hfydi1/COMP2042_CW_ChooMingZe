@@ -17,7 +17,7 @@ public class Info_model {
 	private frogScenemanager scenemanager;
 	/**
 	 * construct a Info_model constructor that takes in stage as param
-	 * @param primaryStage
+	 * @param stage
 	 */
 	public Info_model(Stage stage) {		
 		this.stage=stage;
