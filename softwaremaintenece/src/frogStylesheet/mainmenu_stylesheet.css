@@ -9,7 +9,9 @@
 	
 }
 
-.button{
+.button:hover{
 	-fx-background-color: darkslateblue;
 	-fx-text-fill: white;
+	
 }
+

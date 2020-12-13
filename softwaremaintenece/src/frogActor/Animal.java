@@ -20,7 +20,7 @@ public class Animal extends Actor {
 	private Image imgS2;
 	private Image imgD2;
 	private int points = 0;
-	private int end = 4;
+	private int end = 0;
 	private boolean second = false;
 	private boolean noMove = false;
 	private double movement = 13.3333333*2;

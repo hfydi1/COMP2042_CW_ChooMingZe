@@ -4,14 +4,17 @@ package frogGame;
 
 import java.io.IOException;
 
+
 import frogActor.Animal;
 
 import frogActor.Digit;
 import frogHighscore.Highscore;
 import frogWorld.MyStage;
 import javafx.animation.AnimationTimer;
+import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
@@ -22,6 +25,7 @@ public class Game_model {
 	private AnimationTimer timer;
 	private Animal animal;
 	private Highscore highscore;
+	private Button quit;
 	/**
 	 * construct a Game_model constructor that takes in primaryStage as param
 	 * @param primaryStage
@@ -32,6 +36,7 @@ public class Game_model {
 		this.sceneGame = new Scene(background,600,800);
 		animal = new Animal("file:src/image/froggerUp.png");
 		this.highscore=new Highscore();
+		quit = new Button("Quit Game");
 	}
 	/**
 	 * set a scene
@@ -93,6 +98,15 @@ public class Game_model {
 		
 		return animal;
 	} 	
+	
+	public Button getQuit(){
+        return quit;      
+     }
+	
+	public void setQuit(Button quit){
+		quit.setOnAction(e -> Platform.exit());
+	}	
+	
 	
 	/**
 	 * start the game
