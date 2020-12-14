@@ -211,7 +211,7 @@ public class Animal extends Actor {
 			
 		}
 		
-		if (getX()>600) {
+		if (getX()>550) {
 			move(-movement*2, 0);
 		}
 		if (getIntersectingObjects(Obstacle.class).size() >= 1) {

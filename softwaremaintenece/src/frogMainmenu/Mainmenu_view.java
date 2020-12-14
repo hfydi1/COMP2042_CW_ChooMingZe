@@ -1,10 +1,13 @@
 package frogMainmenu;
 
+import java.util.Collection;
+
 import frogActor.BackgroundImage;
 
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -42,7 +45,10 @@ public class Mainmenu_view {
 		group.getChildren().addAll(text,start,info);
 		
 		//Scene sceneMenu = new Scene(group,550,800);	
+		
 		sceneMenu.getStylesheets().add("frogStylesheet/mainmenu_stylesheet.css");
+		Image image = new Image("file:src/image/froggerUp.png");
+		stage.getIcons().add(image);
 		stage.setScene(sceneMenu);
 		stage.setTitle("Frogger");
 		

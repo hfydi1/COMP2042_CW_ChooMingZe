@@ -22,7 +22,7 @@ public class Info_model {
 	public Info_model(Stage stage) {		
 		this.stage=stage;
 		group= new Group();
-		sceneinfo = new Scene(group,550,800);
+		sceneinfo = new Scene(group,540,800);
 		back = new Button("Back");
 		this.scenemanager= new frogScenemanager(stage);
 		

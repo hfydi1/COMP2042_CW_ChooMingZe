@@ -1,17 +1,32 @@
-.button{
-	-fx-background-color: darkslateblue;
-	-fx-text-fill: white;
-}
-
 #rulestext{
-	-fx-font-size :40px;
+	-fx-font-size :45px;
 	-fx-fill: green;
 	-fx-font-family: "Times New Roman";
 	
-
 }
 
 #infotext{
-	-fx-font-size :22px;
-	-fx-fill: white;
+	-fx-font-size :20px;
+	-fx-fill: #ffff00;
+	-fx-font-family: "Times New Roman";
+	
+}
+
+.button{
+	-fx-border-radius:15px;
+	-fx-border-width:3px;
+	-fx-border-color:#7CFC00;
+	-fx-background-color:transparent;
+	-fx-text-fill:white;
+	-fx-padding: 5px 25px 5px 25px;
+}
+
+.button:hover{
+	-fx-border-radius:15px;
+	-fx-border-width:3px;	
+	-fx-border-color:#BA55D3;
+	-fx-background-color: transparent;
+	-fx-text-fill: #7CFC00;
+	-fx-rotate: 5;
+	
 }

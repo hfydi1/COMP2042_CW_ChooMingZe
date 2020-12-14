@@ -4,6 +4,7 @@ import frogActor.BackgroundImage;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
@@ -95,8 +96,11 @@ public class Info_view {
 	group.getChildren().addAll(background,car,truck,turtle,log,frogEnd,wasd,text,back,wasdtext,vehicletext,rivertext,endtext);
 	sceneinfo.getStylesheets().add("frogStylesheet/info_stylesheet.css");
 	
+	Image image = new Image("file:src/image/froggerUp.png");
+	stage.getIcons().add(image);
+	
 	stage.setScene(sceneinfo);
-	stage.setTitle("info");
+	stage.setTitle("Info");
 	stage.show();
 	}
 

@@ -17,6 +17,7 @@ import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
 
 public class Game_view {
 	
@@ -87,7 +88,9 @@ public class Game_view {
 		 quit.setLayoutY(750);
 		
 		background.getChildren().add(quit);
-		
+		scene.getStylesheets().add("frogStylesheet/game_stylesheet.css");
+		Image image = new Image("file:src/image/froggerUp.png");
+		primaryStage.getIcons().add(image);
 		
 		background.start();
 		primaryStage.setScene(scene);
