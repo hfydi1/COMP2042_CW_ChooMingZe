@@ -1,6 +1,6 @@
 #Frogger
 
-Things that I have added/fixed to the program:
+Things that have been added/fixed to the program:
 1. Added main menu
 1. Added info scene
 1. Added permanent highscore list
