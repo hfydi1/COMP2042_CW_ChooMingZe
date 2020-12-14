@@ -6,7 +6,7 @@ public class Turtle extends Actor{
 	private Image turtle1;
 	private Image turtle2;
 	private Image turtle3;
-	private int speed;
+	private double speed;
 	private int i = 1;
 	private boolean bool = true;
 	/**
@@ -40,17 +40,17 @@ public class Turtle extends Actor{
 	 * Create turtle by getting parameters x position ,y position ,speed , width and height
 	 * @param xpos x position
 	 * @param ypos y position
-	 * @param s  speed
+	 * @param s2  speed
 	 * @param w width
 	 * @param h height
 	 */
-	public Turtle(int xpos, int ypos, int s, int w, int h) {
+	public Turtle(int xpos, int ypos, double s2, int w, int h) {
 		turtle1 = new Image("file:src/image/TurtleAnimation1.png", w, h, true, true);
 		turtle2 = new Image("file:src/image/TurtleAnimation2.png", w, h, true, true);
 		turtle3 = new Image("file:src/image/TurtleAnimation3.png", w, h, true, true);
 		setX(xpos);
 		setY(ypos);
-		speed = s;
+		speed = s2;
 		setImage(turtle2);
 	}
 }

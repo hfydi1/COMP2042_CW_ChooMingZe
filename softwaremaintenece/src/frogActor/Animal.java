@@ -3,14 +3,19 @@ package frogActor;
 import java.util.ArrayList;
 
 
-import javafx.event.EventHandler;
 
+import javafx.event.EventHandler;
+import frogLevel.Level_model;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import frogGame.Game_view;
 
 
 public class Animal extends Actor {
+	private static double speed1;
+	private static double speed2;
+	private static double speed6;
 	private Image imgW1;
 	private Image imgA1;
 	private Image imgS1;
@@ -33,6 +38,11 @@ public class Animal extends Actor {
 	private int carD = 0;
 	private double w = 800;
 	private ArrayList<End> inter = new ArrayList<End>();
+	//private double s1;
+	//private double s2;
+	//private double s3;
+	//private double s4;
+	//private double s5;
 	
 	/**
 	 * Create animal by getting parameter imagelink
@@ -222,18 +232,18 @@ public class Animal extends Actor {
 		}
 		if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
 			if(getIntersectingObjects(Log.class).get(0).getLeft())
-				move(-2,0);
+				move(speed6,0);
 			else
-				move (.75,0);
+				move (speed1,0);
 		}
 		else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
-			move(-1,0);
+			move(speed2,0);
 		}
 		else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
 			if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
 				waterDeath = true;
 			} else {
-				move(-1,0);
+				move(speed2,0);
 			}
 		}
 		else if (getIntersectingObjects(End.class).size() >= 1) {
@@ -282,6 +292,11 @@ public class Animal extends Actor {
 		}
 		return false;
 		
+	}
+	public static void speed(double s1, double s2,double s6) {
+		speed1=s1;// TODO Auto-generated method stub
+		speed2=s2;
+		speed6=s6;
 	}
 	
 

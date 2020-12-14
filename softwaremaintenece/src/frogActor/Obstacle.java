@@ -3,7 +3,7 @@ package frogActor;
 import javafx.scene.image.Image;
 
 public class Obstacle extends Actor {
-	private int speed;
+	private double speed;
 	
 	/**
 	 * override act method and get now as parameter to set current obstacle's position/state
@@ -22,15 +22,15 @@ public class Obstacle extends Actor {
 	 * @param imageLink link of the images
 	 * @param xpos x-position
 	 * @param ypos y-position
-	 * @param s speed
+	 * @param s4 speed
 	 * @param w width
 	 * @param h height
 	 */
-	public Obstacle(String imageLink, int xpos, int ypos, int s, int w, int h) {
+	public Obstacle(String imageLink, int xpos, int ypos, double s4, int w, int h) {
 		setImage(new Image(imageLink, w,h, true, true));
 		setX(xpos);
 		setY(ypos);
-		speed = s;
+		speed = s4;
 	}
 
 }
