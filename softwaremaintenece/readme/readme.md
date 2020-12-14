@@ -12,29 +12,37 @@ Things that I have added/fixed to the program:
 1. Ant build file
 1. github
 
+##Bugs Fixed
+- At first,background image was not shown in the game scene. 
+After fixing it, the image is displayed:<br/>
+<img src="readmeimg/game.png" style="width:300px;"/>
 
+
+
+- Frog is now not allowed to jump to outside of the scene after the fix where it was possible before.
 
 ##Exntension
 
-#####Main Menu
+__Main Menu__
+
 Screenshot of mainmenu:<br/>
-<img src="mainmenu.png" style="width:300px;"/>
+<img src="readmeimg/mainmenu.png" style="width:300px;"/>
 
 - Main menu is added and designed using css.
 - There are two functional buttons in mainmenu which are "Start Game" and "Info".
 - Press "Start Game" button to start the game or press "Info" button to change to info scene.
 
-#####Info
+__Info__
 Screenshot of info:<br/>
-<img src="info.png" style="width:300px;"/>
+<img src="readmeimg/info.png" style="width:300px;"/>
 
 - Info is added and designed using css.
 - There is a funtional button which is "Back" button.
 - Press "Back" button to return back to mainmenu.
 
-#####Highscore
+__Highscore__
 Screenshot of highscore:<br/>
-<img src="highscore.png" style="width:300px;"/>
+<img src="readmeimg/highscore.png" style="width:300px;"/>
 
 - A file system is created to get the score from every round and the top 10 highscores are sorted and displayed
 - After the game ended, a "Quit Game" button is added.
@@ -48,7 +56,7 @@ __Rearrange all classes into new packages__
 When the code was first downloaded from github, the code was unorganized and really hard to work with. <br/>
 So the code was rearranged as below:<br/>
 
-<img src="refactor.png"/>
+<img src="readmeimg/refactor.png"/>
 
 After the rearrangement the project was easier to work on.
 
@@ -69,10 +77,10 @@ private Image imgw1;
 ```
 __MVC pattern__
 
-Some classes have been organized in MVC pattern so that it will be easier to modify in the future.<br/>
-<img src="mainmenumvc.png"/>
-<img src="infomvc.png"/>
-<img src="gamemvc.png"/>
+Some classes have been organized in MVC pattern(Model,View,Controller) so that it will be easier to modify in the future.<br/>
+<img src="readmeimg/mainmenumvc.png"/>
+<img src="readmeimg/infomvc.png"/>
+<img src="readmeimg/gamemvc.png"/>
 
 
 ##Javadoc
@@ -97,8 +105,8 @@ Github is used as a remote repository and has been used frequently for this proj
 Every commits have been given meaningful comments.
 
 Screenshot of commit history:<br/>
-<img src="git1.png" style="width:700px;"/>
-<img src="git2.png" style="width:700px;"/>
-<img src="git3.png" style="width:700px;"/>
+<img src="readmeimg/git1.png" style="width:700px;"/>
+<img src="readmeimg/git2.png" style="width:700px;"/>
+<img src="readmeimg/git3.png" style="width:700px;"/>
 
 
