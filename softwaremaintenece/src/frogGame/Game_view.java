@@ -31,7 +31,7 @@ public class Game_view {
 	 * @param background
 	 * @param scene
 	 * @param animal
-	 * @throws Exception
+	 * @throws Exception 
 	 */
 	public void start(Stage primaryStage, MyStage background, Scene scene,Animal animal,double s1,double s2, double s3, double s4 ,double s5,double s6) throws Exception {
 		
@@ -78,9 +78,7 @@ public class Game_view {
 		//Row9
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 0, 649, s5, 120, 120));
 		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 300, 649, s5, 120, 120));
-		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 600, 649, s5, 120, 120));
-	
-		
+		background.add(new Obstacle("file:src/image/truck1"+"Right.png", 600, 649, s5, 120, 120));	
 		
 		
 		
