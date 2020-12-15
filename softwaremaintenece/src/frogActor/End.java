@@ -6,14 +6,15 @@ public class End extends Actor{
 	private boolean activated = false;
 	
 	/**
-	 * override act method and get now as parameter 
+	 * overrided method from abstract class
 	 */
 	@Override
 	public void act(long now) {
 		// TODO Auto-generated method st
 	}
 	/**
-	 * Create End crove by getting parameters x position ,y position 
+	 * Create End crove by getting parameters x position and y position 
+	 * of the image and set it.
 	 * @param x x-postion
 	 * @param y y-position
 	 */

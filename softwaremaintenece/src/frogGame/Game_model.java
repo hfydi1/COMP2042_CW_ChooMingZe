@@ -5,17 +5,14 @@ package frogGame;
 import java.io.IOException;
 
 
+
 import frogActor.Animal;
 
 import frogActor.Digit;
 import frogHighscore.Highscore;
 import frogWorld.MyStage;
 import javafx.animation.AnimationTimer;
-import javafx.application.Platform;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 public class Game_model {
@@ -25,7 +22,6 @@ public class Game_model {
 	private AnimationTimer timer;
 	private Animal animal;
 	private Highscore highscore;
-	private Button quit;
 	/**
 	 * construct a Game_model constructor that takes in primaryStage as param
 	 * @param primaryStage
@@ -36,7 +32,6 @@ public class Game_model {
 		this.sceneGame = new Scene(background,600,800);
 		animal = new Animal("file:src/image/froggerUp.png");
 		this.highscore=new Highscore();
-		quit = new Button("Quit Game");
 	}
 	/**
 	 * set a scene
@@ -76,7 +71,7 @@ public class Game_model {
 	}
 	/**
 	 * return Mystage
-	 * @return
+	 * @return Stage
 	 */
 	public MyStage getMyStage() {
 		
@@ -92,24 +87,16 @@ public class Game_model {
 	}
 	/**
 	 * return a animal
-	 * @return
+	 * @return Animal 
 	 */
 	public Animal getAnimal() {
 		
 		return animal;
-	} 	
-	
-	public Button getQuit(){
-        return quit;      
-     }
-	
-	public void setQuit(Button quit){
-		quit.setOnAction(e -> Platform.exit());
-	}	
+	} 
 	
 	
 	/**
-	 * start the game
+	 * start the timer
 	 */
 	public void start() {
 		background.playMusic();
@@ -117,13 +104,13 @@ public class Game_model {
 	    timer.start();
 	}
 	/**
-	 * stop the game
+	 * stop the timer
 	 */
 	public void stop() {
 	    timer.stop();
 	}
 	/**
-	 * monitor the game
+	 * monitor the scoring of the game
 	 */
 	public void createTimer() {
 	    timer = new AnimationTimer() {
@@ -138,14 +125,6 @@ public class Game_model {
 	        		
 	        		stop();
 	        		background.stop();
-	        		/*
-	        		Alert alert = new Alert(AlertType.INFORMATION);
-	        		alert.setTitle("You Have Won The Game!");
-	        		alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
-	        		
-	        		alert.setContentText("Highest Possible Score: 800");
-	        		alert.show();
-	        		*/
 	        		try {
 						highscore.setScore(animal.getPoints());
 					} catch (IOException e) {

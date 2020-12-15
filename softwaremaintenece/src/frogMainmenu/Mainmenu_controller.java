@@ -7,8 +7,8 @@ public class Mainmenu_controller {
 	private Mainmenu_view view;
 	/**
 	 * construct a Mainmenu_controller that takes in model and view as parameters
-	 * @param model
-	 * @param view
+	 * @param model Mainmenu_model
+	 * @param view Mainmenu_view
 	 */
 	public Mainmenu_controller(Mainmenu_model model, Mainmenu_view view){
         this.model = model;

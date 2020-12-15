@@ -38,15 +38,10 @@ public class Animal extends Actor {
 	private int carD = 0;
 	private double w = 800;
 	private ArrayList<End> inter = new ArrayList<End>();
-	//private double s1;
-	//private double s2;
-	//private double s3;
-	//private double s4;
-	//private double s5;
 	
 	/**
 	 * Create animal by getting parameter imagelink
-	 * @param imageLink
+	 * @param imageLink to get images for game scene
 	 */
 	public Animal(String imageLink) {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
@@ -262,8 +257,6 @@ public class Animal extends Actor {
 		}
 		else if (getY()<413){
 			waterDeath = true;
-			//setX(300);
-			//setY(679.8+movement);
 		}
 	}
 	
@@ -275,7 +268,7 @@ public class Animal extends Actor {
 		return end==5;
 	}
 	/**
-	 * access points
+	 * access points after game ends
 	 * @return
 	 */
 	public int getPoints() {
@@ -291,7 +284,10 @@ public class Animal extends Actor {
 			return true;
 		}
 		return false;
-		
+	/**
+	 * 
+	 * To set the intersect speed when frog is intersecting with objects
+	 */
 	}
 	public static void speed(double s1, double s2,double s6) {
 		speed1=s1;// TODO Auto-generated method stub

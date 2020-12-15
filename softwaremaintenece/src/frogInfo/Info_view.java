@@ -14,10 +14,10 @@ public class Info_view {
 	}
 	/**
 	 * create infoStart by getting stage, group, sceneinfo , back as params
-	 * @param stage
-	 * @param group
-	 * @param sceneinfo
-	 * @param back
+	 * @param stage Info's stage
+	 * @param group Info's group
+	 * @param sceneinfo Info's scene
+	 * @param back Info's back button
 	 * @throws Exception
 	 */
 	public void infoStart(Stage stage, Group group,Scene sceneinfo, Button back) throws Exception {

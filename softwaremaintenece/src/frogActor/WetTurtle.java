@@ -8,8 +8,6 @@ public class WetTurtle extends Actor{
 	private Image turtle3;
 	private Image turtle4;
 	private double speed;
-	int i = 1;
-	private boolean bool = true;
 	private boolean sunk = false;
 	/**
 	 * 

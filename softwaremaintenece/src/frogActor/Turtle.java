@@ -7,8 +7,7 @@ public class Turtle extends Actor{
 	private Image turtle2;
 	private Image turtle3;
 	private double speed;
-	private int i = 1;
-	private boolean bool = true;
+	
 	/**
 	 * 
 	 *  override act method and get now as parameter to set current turtle's position/state

@@ -86,7 +86,6 @@ public class Info_model {
 	}
 	/**
 	 * return back button 
-	 * @return
 	 */
 	public Button getBack(){
         return back;      

@@ -4,6 +4,7 @@ package frogGame;
 
 
 import frogActor.Animal;
+
 import frogActor.BackgroundImage;
 import frogActor.Digit;
 import frogActor.End;
@@ -12,7 +13,6 @@ import frogActor.Obstacle;
 import frogActor.Turtle;
 import frogActor.WetTurtle;
 import frogWorld.MyStage;
-import javafx.animation.AnimationTimer;
 import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -26,12 +26,19 @@ public class Game_view {
 		
 	}
 	/**
+	 * 
 	 * create start by getting parameters primarystage,background,scene and animal
-	 * @param primaryStage 
-	 * @param background
-	 * @param scene
-	 * @param animal
-	 * @throws Exception 
+	 * @param primaryStage Game's stage
+	 * @param background Game's background
+	 * @param scene Games's scene
+	 * @param animal frog
+	 * @param s1 speed1 value
+	 * @param s2 speed2 value
+	 * @param s3 speed3 value
+	 * @param s4 speed4 value
+	 * @param s5 speed5 value
+	 * @param s6 speed6 value
+	 * @throws Exception
 	 */
 	public void start(Stage primaryStage, MyStage background, Scene scene,Animal animal,double s1,double s2, double s3, double s4 ,double s5,double s6) throws Exception {
 		

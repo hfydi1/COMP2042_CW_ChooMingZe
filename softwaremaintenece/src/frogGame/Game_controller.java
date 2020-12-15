@@ -11,8 +11,8 @@ public class Game_controller {
 	private Game_view view;
 	/**
 	 * construct a Game_controller that takes in model and view as parameters
-	 * @param model
-	 * @param view
+	 * @param model Game_model class
+	 * @param view  Game_view class
 	 */
 	public Game_controller(Game_model model, Game_view view){
         this.model = model;
@@ -24,7 +24,12 @@ public class Game_controller {
 	
 	/**
 	 * run game scene
-	 * @throws Exception
+	 * @param s1 speed1 value from scenemanager
+	 * @param s2 speed2 value from scenemanager
+	 * @param s3 speed3 value from scenemanager
+	 * @param s4 speed4 value from scenemanager
+	 * @param s5 speed5 value from scenemanager
+	 * @param s6 speed6 value from scenemanager
 	 */
 public void runGame(double s1,double s2, double s3, double s4 ,double s5,double s6)throws Exception{
 	

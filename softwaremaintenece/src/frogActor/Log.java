@@ -18,7 +18,7 @@ public class Log extends Actor {
 			setX(700);
 	}
 	/**
-	 * construct a log with instance of imagelink, size, x-position ,y-posistion and speed
+	 * construct a log with imagelink, size, x-position ,y-posistion and speed
 	 * @param imageLink link to images
 	 * @param size size of image
 	 * @param xpos x-position
@@ -33,7 +33,7 @@ public class Log extends Actor {
 		
 	}
 	/**
-	 * access position of log
+	 * access position of the log
 	 * @return the position in boolean
 	 */
 	public boolean getLeft() {

@@ -8,8 +8,8 @@ public class Info_controller {
 	private Info_view view;
 	/**
 	 * construct a Info_controller that takes in model and view as parameters
-	 * @param model
-	 * @param view
+	 * @param model Info_model
+	 * @param view Info_view
 	 */
 	public Info_controller(Info_model model, Info_view view){
         this.model = model;
@@ -18,7 +18,6 @@ public class Info_controller {
      }
 	/**
 	 * run info scene
-	 * @throws Exception
 	 */
 	public void runInfo() throws Exception{
 		

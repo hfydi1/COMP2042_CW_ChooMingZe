@@ -1,19 +1,24 @@
 package frogActor;
 
 import javafx.scene.image.ImageView;
+
 import javafx.scene.input.InputEvent;
 
 import java.util.ArrayList;
 
 import frogWorld.World;
 
-
+/**
+ * The abstract class for all the objects 
+ * in the frogger project.
+ *
+ */
 public abstract class Actor extends ImageView{
 	
 	/**
-	 * to get movement
-	 * @param dx x value
-	 * @param dy y value
+	 * to get movement of the actor
+	 * @param dx x-axis value
+	 * @param dy y-axis value
 	 */
     public void move(double dx, double dy) {
         setX(getX() + dx);
@@ -42,9 +47,9 @@ public abstract class Actor extends ImageView{
     }
     /**
      * check intersect
-     * @param <A>
-     * @param cls
-     * @return
+     * @param <A> Actor
+     * @param cls Import actor
+     * @return Array of the imported actor
      */
     public <A extends Actor> java.util.List<A> getIntersectingObjects(java.lang.Class<A> cls){
         ArrayList<A> someArray = new ArrayList<A>();
@@ -55,15 +60,10 @@ public abstract class Actor extends ImageView{
         }
         return someArray;
     }
-    
-    public void manageInput(InputEvent e) {
-        
-    }
-    
     /**
      * 
-     * @param <A>
-     * @param cls
+     * @param <A> Actor
+     * @param cls Import actor
      * @return
      */
     public <A extends Actor> A getOneIntersectingObject(java.lang.Class<A> cls) {
@@ -76,6 +76,18 @@ public abstract class Actor extends ImageView{
         }
         return someArray.get(0);
     }
+    
+    public void manageInput(InputEvent e) {
+        
+    }
+    
+    /**
+     * 
+     * @param <A> 
+     * @param cls
+     * @return
+     */
+    
     /**
      * abstract act method getting parameter now
      * @param now

@@ -21,7 +21,7 @@ public class Highscore{
 	File scorefile = new File ("src/frogHighscore/hscore.txt");	
 	/**
 	 * create a set score to get the score from the game and set in a txt file
-	 * @param point
+	 * @param point getting score from game
 	 * @throws IOException
 	 */
 	public void setScore(int point) throws IOException{		
@@ -81,8 +81,8 @@ public class Highscore{
 }
 	/**
 	 * create a display to show the highscore
-	 * @param array
-	 * @return
+	 * @param array array that contains all the scores
+	 * @return display the score
 	 */
 	public String display(ArrayList<Integer> array) {
 		

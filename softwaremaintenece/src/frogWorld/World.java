@@ -67,7 +67,7 @@ public abstract class World extends Pane {
 		});
     }
     /**
-     * create a timer whe ngame starts
+     * create a timer when game starts
      */
     public void createTimer() {
         timer = new AnimationTimer() {
@@ -84,14 +84,14 @@ public abstract class World extends Pane {
         };
     }
     /**
-     * start the game
+     * start the timer
      */
     public void start() {
     	createTimer();
         timer.start();
     }
     /**
-     * stop the game
+     * stop the timer
      */
     public void stop() {
         timer.stop();
@@ -114,7 +114,7 @@ public abstract class World extends Pane {
      * 
      * @param <A>
      * @param cls
-     * @return
+     * @return array
      */
     public <A extends Actor> List<A> getObjects(Class<A> cls) {
         ArrayList<A> someArray = new ArrayList<A>();

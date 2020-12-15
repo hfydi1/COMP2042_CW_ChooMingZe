@@ -17,9 +17,8 @@ public class Level_model {
 	private Button medium;
 	private Button hard;
 	private frogScenemanager scenemanager;
-	private static double easyS1;
 	/**
-	 * construct a Mainmenu_model constructor that takes in stage as param
+	 * construct a Level_model constructor that takes in stage as param
 	 * @param stage
 	 */
 	public Level_model(Stage stage) {		
@@ -73,12 +72,11 @@ public class Level_model {
 	 */
 	public Group getGroup(){
         return group;      
-     }
-	
+     }	
 	
 
 	/**
-	 * return start button
+	 * return easy button
 	 * @return
 	 */
 	public Button getEasy(){
@@ -86,8 +84,8 @@ public class Level_model {
      }
 	
 	/**
-	 * set a start button to game scene
-	 * @param start
+	 * set an easy button to game scene
+	 * @param easy
 	 */
 	public void setEasy(Button easy){
 		easy.setOnAction(e-> {	try {
@@ -99,7 +97,7 @@ public class Level_model {
      });
 	}	
 	/**
-	 * set a info button to info scene
+	 * set a medium button to game scene
 	 * @param info
 	 */
 	public void setMedium(Button medium){
@@ -111,14 +109,20 @@ public class Level_model {
 		}
      });
 	}
+	
 	/**
-	 * return info button
+	 * return medium button
 	 * @return
 	 */
 	public Button getMedium(){
         return medium;      
      
 	}
+	
+	/**
+	 * set a hard button to game scene
+	 * @param hard
+	 */
 	
 	public void setHard(Button hard){
 		hard.setOnAction(e->{try {
@@ -129,8 +133,9 @@ public class Level_model {
 		}
      });
 	}
+	
 	/**
-	 * return info button
+	 * return hard button
 	 * @return
 	 */
 	public Button getHard(){

@@ -3,11 +3,10 @@ package frogActor;
 import javafx.scene.image.Image;
 
 public class Digit extends Actor{
-	private int dim;
 	private Image im1;
 	
 	/**
-	 * override act method and get now as parameter 
+	 * overrided method from abstract class
 	 */
 	@Override
 	public void act(long now) {
@@ -17,9 +16,9 @@ public class Digit extends Actor{
 	
 	/**
 	 * 
-	 * construct a digit with instance of number, size,x-position and y-position
+	 * construct and display digit with number, size,x-position and y-position
 	 * 
-	 * @param n number
+	 * @param n number to be displaysd
 	 * @param dim size
 	 * @param x x-position
 	 * @param y y-position

@@ -4,7 +4,7 @@ import javafx.scene.image.Image;
 
 public class BackgroundImage extends Actor{
 	/**
-	 * override act method and get now as parameter 
+	 * Overrided method from abstract class
 	 */
 
 	@Override

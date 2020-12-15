@@ -51,6 +51,12 @@ public class frogScenemanager {
 	}
 	/**
 	 * create startGame to run game scene
+	 * @param s1 speed1 value from level_model
+	 * @param s2 speed2 value from level_model
+	 * @param s3 speed3 value from level_model
+	 * @param s4 speed4 value from level_model
+	 * @param s5 speed5 value from level_model
+	 * @param s6 speed6 value from level_model
 	 * @throws Exception
 	 */
 	public void startGame(double s1,double s2, double s3, double s4 ,double s5,double s6) throws Exception {
@@ -60,7 +66,10 @@ public class frogScenemanager {
 		Game_controller controller = new Game_controller(model,view);
 		controller.runGame(s1,s2, s3,s4,s5,s6);
 	}
-	
+	/**
+	 * create startLevel to run level scene
+	 * @throws Exception
+	 */
 	public void startLevel() throws Exception {
 		
 		Level_view view = new Level_view();
