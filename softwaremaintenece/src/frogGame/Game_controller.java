@@ -4,7 +4,10 @@ import frogActor.Animal;
 
 import frogGame.Game_model;
 import frogGame.Game_view;
-
+/**
+ * Controller of the game scene
+ *
+ */
 public class Game_controller {
 	
 	private Game_model model;

@@ -1,7 +1,11 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * Turtle class
+ * Responsible of movement of turtles
+ * Acts as a platform
+ */
 public class Turtle extends Actor{
 	private Image turtle1;
 	private Image turtle2;

@@ -11,7 +11,11 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import frogGame.Game_view;
 
-
+/**
+ * Animal class
+ * This class is the most important for the main frog
+ *
+ */
 public class Animal extends Actor {
 	private static double speed1;
 	private static double speed2;

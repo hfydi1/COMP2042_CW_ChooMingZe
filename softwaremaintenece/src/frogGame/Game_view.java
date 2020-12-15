@@ -18,7 +18,10 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
-
+/**
+ * View of the game scene
+ * Where it is used to display everything
+ */
 public class Game_view {
 	
 	public Game_view() {

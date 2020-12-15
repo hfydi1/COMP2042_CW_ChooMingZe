@@ -15,7 +15,10 @@ import frogLevel.Level_model;
 import frogLevel.Level_view;
 import javafx.stage.Stage;
 
-
+/**
+ * scenemanager class
+ * Responsible for every scenes changing 
+ */
 public class frogScenemanager {
 	private Stage primaryStage;
 	

@@ -7,7 +7,11 @@ import javafx.scene.control.Button;
 import javafx.scene.Group;
 import javafx.stage.Stage;
 
-
+/**
+ * Model of the mainmenu scene
+ * Where mostly are getter and setter
+ * Has buttons that either change to level scene or info scene
+ */
 public class Mainmenu_model {
 	private Scene sceneMenu;
 	private Stage stage;

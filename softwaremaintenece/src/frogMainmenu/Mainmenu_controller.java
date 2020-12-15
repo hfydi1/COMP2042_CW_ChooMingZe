@@ -1,6 +1,9 @@
 package frogMainmenu;
 
-
+/**
+ * Controller of the mainmenu scene
+ *
+ */
 public class Mainmenu_controller {
 	
 	private Mainmenu_model model;

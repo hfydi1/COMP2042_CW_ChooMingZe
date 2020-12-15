@@ -7,7 +7,11 @@ import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
+/**
+ * Model of the info scene 
+ * Where mostly are getter and setter
+ * Has button that back to main menu
+ */
 public class Info_model {
 	
 	private Scene sceneinfo;

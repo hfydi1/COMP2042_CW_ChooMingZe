@@ -8,7 +8,11 @@ import javafx.scene.control.Button;
 import javafx.scene.Group;
 import javafx.stage.Stage;
 
-
+/**
+ * Model of the level scene
+ * Where mostly are getter and setter
+ * Has buttons to select different difficulties
+ */
 public class Level_model {
 	private Scene sceneLevel;
 	private Stage stage;
@@ -98,7 +102,7 @@ public class Level_model {
 	}	
 	/**
 	 * set a medium button to game scene
-	 * @param info
+	 * @param medium
 	 */
 	public void setMedium(Button medium){
 		medium.setOnAction(e->{try {

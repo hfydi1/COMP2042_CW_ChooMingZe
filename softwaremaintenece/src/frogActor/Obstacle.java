@@ -1,7 +1,10 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * Obstacle class
+ * Responsible for moving obstacles such as trucks and cars 
+ */
 public class Obstacle extends Actor {
 	private double speed;
 	

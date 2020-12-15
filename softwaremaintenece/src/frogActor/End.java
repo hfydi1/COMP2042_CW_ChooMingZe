@@ -1,7 +1,10 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * End class
+ * Responsible for the ending of the game
+ */
 public class End extends Actor{
 	private boolean activated = false;
 	

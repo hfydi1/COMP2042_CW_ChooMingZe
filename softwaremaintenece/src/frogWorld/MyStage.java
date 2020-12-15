@@ -2,10 +2,13 @@ package frogWorld;
 
 import java.io.File;
 
+
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
-import javafx.util.Duration;
-
+/**
+ * Background for the game
+ *
+ */
 public class MyStage extends World{
 	MediaPlayer mediaPlayer;
 	@Override

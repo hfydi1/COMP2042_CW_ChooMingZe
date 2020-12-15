@@ -1,7 +1,10 @@
 package frogInfo;
 
 
-
+/**
+ * Controller of the info scene
+ *
+ */
 public class Info_controller {
 	
 	private Info_model model;

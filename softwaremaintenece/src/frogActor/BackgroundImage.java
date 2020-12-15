@@ -1,7 +1,11 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * BackgroundImage class
+ * To set the image
+ *
+ */
 public class BackgroundImage extends Actor{
 	/**
 	 * Overrided method from abstract class

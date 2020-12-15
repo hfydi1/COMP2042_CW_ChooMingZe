@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.Scanner;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-
+/**
+ * Save score from every game and sort and display it
+ *
+ */
 public class Highscore{
 
 	public void highcore(){

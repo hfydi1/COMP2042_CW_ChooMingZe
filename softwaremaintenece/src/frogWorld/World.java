@@ -2,6 +2,7 @@ package frogWorld;
 
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import frogActor.Actor;
@@ -12,11 +13,12 @@ import javafx.event.EventHandler;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 
-
+/**
+ * Layout for the game
+ *
+ */
 public abstract class World extends Pane {
     private AnimationTimer timer;
     /**

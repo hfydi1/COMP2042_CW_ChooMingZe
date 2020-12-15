@@ -10,7 +10,10 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+/**
+ * View for the mainmenu scene
+ * Where it is used to display everything
+ */
 public class Mainmenu_view {
 	public Mainmenu_view() {
 		

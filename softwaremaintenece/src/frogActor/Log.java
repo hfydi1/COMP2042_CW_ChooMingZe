@@ -1,7 +1,11 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * Log class
+ * Responsible for the movement of logs
+ * Acts as a platform
+ */
 public class Log extends Actor {
 
 	private double speed;

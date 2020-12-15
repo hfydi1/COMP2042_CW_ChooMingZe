@@ -10,7 +10,11 @@ import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
-
+/**
+ * View of the level scene
+ * Where it is used to display everything
+ *
+ */
 public class Level_view {
 	public Level_view() {
 		

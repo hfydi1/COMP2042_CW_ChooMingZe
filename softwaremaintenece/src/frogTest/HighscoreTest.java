@@ -13,7 +13,10 @@ import org.junit.jupiter.api.Test;
 import frogHighscore.Highscore;
 
 
-
+/**
+ * Junit test for highscore class
+ *
+ */
 class HighscoreTest {
 	/**
 	 * Test maximum score of highscore

@@ -14,7 +14,10 @@ import frogWorld.MyStage;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-
+/**
+ * Model of the game scene
+ *	Where mostly are getter and setter
+ */
 public class Game_model {
 	private Stage primaryStage;
 	private MyStage background;

@@ -2,7 +2,10 @@ package frogLevel;
 
 import frogLevel.Level_model;
 import frogLevel.Level_view;
-
+/**
+ * Controller of the level scene
+ *
+ */
 public class Level_controller {
 	
 	private Level_model model;

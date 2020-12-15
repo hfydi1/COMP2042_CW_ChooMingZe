@@ -1,7 +1,10 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * Digit class
+ * To diplay the number
+ */
 public class Digit extends Actor{
 	private Image im1;
 	

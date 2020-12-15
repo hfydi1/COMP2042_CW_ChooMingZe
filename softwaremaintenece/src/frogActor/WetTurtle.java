@@ -1,7 +1,11 @@
 package frogActor;
 
 import javafx.scene.image.Image;
-
+/**
+ * WetTurtle class
+ *	Responsible for movement of turtles that can sunk
+ *  Sometimes acts as a platform
+ */
 public class WetTurtle extends Actor{
 	private Image turtle1;
 	private Image turtle2;
