@@ -128,6 +128,10 @@ Every commits have been given meaningful comments.<br/>
 
 Link to my Github: <https://github.com/mingggze/COMP2042_CW_ChooMingZe>
 
+Screenshot of github:<br/>
+<img src="readmeimg/github.png" style="width:700px;"/>
+
+
 Screenshots of commit history:<br/>
 <img src="readmeimg/git1.png" style="width:700px;"/>
 <br/>
