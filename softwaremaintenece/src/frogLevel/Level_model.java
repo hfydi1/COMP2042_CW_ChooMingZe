@@ -93,7 +93,7 @@ public class Level_model {
 	 */
 	public void setEasy(Button easy){
 		easy.setOnAction(e-> {	try {
-			scenemanager.startGame(0.75,-1,-2,-5,1,-3);
+			scenemanager.startGame(0.75,-1,-2,-5,1);
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -106,7 +106,7 @@ public class Level_model {
 	 */
 	public void setMedium(Button medium){
 		medium.setOnAction(e->{try {
-			scenemanager.startGame(1.0,-1.25,-2.25,-5.0,1.25,-3.5);
+			scenemanager.startGame(1.0,-1.25,-2.25,-5.0,1.25);
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
@@ -130,7 +130,7 @@ public class Level_model {
 	
 	public void setHard(Button hard){
 		hard.setOnAction(e->{try {
-			scenemanager.startGame(2,-2.0,-3.5,-5.2,2.5,-4);
+			scenemanager.startGame(2,-2.0,-3.5,-5.2,2.5);
 		} catch (Exception e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

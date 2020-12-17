@@ -19,7 +19,7 @@ import frogGame.Game_view;
 public class Animal extends Actor {
 	private static double speed1;
 	private static double speed2;
-	private static double speed6;
+	private static double speed3;
 	private Image imgW1;
 	private Image imgA1;
 	private Image imgS1;
@@ -231,7 +231,7 @@ public class Animal extends Actor {
 		}
 		if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
 			if(getIntersectingObjects(Log.class).get(0).getLeft())
-				move(speed6,0); 
+				move(speed3,0); 
 			else
 				move (speed1,0);
 		}
@@ -293,10 +293,10 @@ public class Animal extends Actor {
 	 * To set the intersect speed when frog is intersecting with objects
 	 */
 	}
-	public static void speed(double s1, double s2,double s6) {
+	public static void speed(double s1, double s2,double s3) {
 		speed1=s1;// TODO Auto-generated method stub
 		speed2=s2;
-		speed6=s6;
+		speed3=s3;
 	}
 	
 

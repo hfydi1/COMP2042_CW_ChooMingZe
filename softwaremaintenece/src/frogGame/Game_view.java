@@ -40,10 +40,9 @@ public class Game_view {
 	 * @param s3 speed3 value
 	 * @param s4 speed4 value
 	 * @param s5 speed5 value
-	 * @param s6 speed6 value
 	 * @throws Exception
 	 */
-	public void start(Stage primaryStage, MyStage background, Scene scene,Animal animal,double s1,double s2, double s3, double s4 ,double s5,double s6) throws Exception {
+	public void start(Stage primaryStage, MyStage background, Scene scene,Animal animal,double s1,double s2, double s3, double s4 ,double s5) throws Exception {
 		
 	
 		background.add(new BackgroundImage("file:src/image/backImageEdit.jpg"));
@@ -59,8 +58,8 @@ public class Game_view {
 		background.add(new WetTurtle(200, 217, s2, 130, 130));
 		
 		//Row3
-		background.add(new Log("file:src/image/logs.png", 300, 0, 276, s6));
-		background.add(new Log("file:src/image/logs.png", 300, 400, 276, s6));
+		background.add(new Log("file:src/image/logs.png", 300, 0, 276, s3));
+		background.add(new Log("file:src/image/logs.png", 300, 400, 276, s3));
 		
 		//Row4
 		background.add(new Log("file:src/image/log3.png", 150, 50, 329, s1));
@@ -111,8 +110,7 @@ public class Game_view {
 		
 		background.getChildren().add(quit);
 		scene.getStylesheets().add("frogStylesheet/game_stylesheet.css");
-		Image image = new Image("file:src/image/froggerUp.png");
-		primaryStage.getIcons().add(image);
+		
 		
 		background.start();
 		primaryStage.setScene(scene);

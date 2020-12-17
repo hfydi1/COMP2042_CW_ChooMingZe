@@ -32,13 +32,12 @@ public class Game_controller {
 	 * @param s3 speed3 value from scenemanager
 	 * @param s4 speed4 value from scenemanager
 	 * @param s5 speed5 value from scenemanager
-	 * @param s6 speed6 value from scenemanager
 	 */
-public void runGame(double s1,double s2, double s3, double s4 ,double s5,double s6)throws Exception{
+public void runGame(double s1,double s2, double s3, double s4 ,double s5)throws Exception{
 	
 		
-		view.start(model.getStage(), model.getMyStage(), model.getScene(), model.getAnimal(), s1,s2, s3,s4 ,s5,s6);
-		Animal.speed(s1,s2,s6);
+		view.start(model.getStage(), model.getMyStage(), model.getScene(), model.getAnimal(), s1,s2, s3,s4 ,s5);
+		Animal.speed(s1,s2,s3);
 		model.start();
 		
 	}

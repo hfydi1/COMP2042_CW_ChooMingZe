@@ -125,7 +125,9 @@ Every commits have been given meaningful comments.
 
 Screenshot of commit history:<br/>
 <img src="readmeimg/git1.png" style="width:700px;"/>
+<br/>
 <img src="readmeimg/git2.png" style="width:700px;"/>
+<br/>
 <img src="readmeimg/git3.png" style="width:700px;"/>
 
 
