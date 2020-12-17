@@ -118,12 +118,17 @@ Junit test successfully without errors:<br/>
 
 Ant build file is added and build successfully.
 
+Ant build successfully:<br/>
+<img src="readmeimg/buildfile.png"/>
+
 ##github
 
 Github is used as a remote repository and has been used frequently for this project for this project.<br/>
-Every commits have been given meaningful comments.
+Every commits have been given meaningful comments.<br/>
 
-Screenshot of commit history:<br/>
+Link to my Github: <https://github.com/mingggze/COMP2042_CW_ChooMingZe>
+
+Screenshots of commit history:<br/>
 <img src="readmeimg/git1.png" style="width:700px;"/>
 <br/>
 <img src="readmeimg/git2.png" style="width:700px;"/>
